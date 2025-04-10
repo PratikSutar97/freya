@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started
-      - grep -Fq "pratik" index.html
+      - grep -Fq "Pratik" index.html
     finally:
       - echo This always runs even if the install command fails
   post build:
