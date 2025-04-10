@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Entered the install phase...
       - echo Installing dependencies...
-  pre build:
+  pre_build:
     commands:
       - echo Entered the pre_build phase...
   build:
@@ -14,7 +14,7 @@ phases:
       - grep -Fq "Pratik" index.html
     finally:
       - echo This always runs even if the install command fails
-  post build:
+  post_build:
     commands:
       - echo Entered the post build phase...
       - echo Build completed
